@@ -8,6 +8,6 @@
 
 @interface NotifyPoster : NSObject
 
-
+- (void)triggerNotify;
 
 @end

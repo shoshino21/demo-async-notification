@@ -9,43 +9,39 @@
 #import "NotifyPoster.h"
 
 @implementation NotifyPoster {
-  NSTimer *timer;
-  NSNotificationQueue *notifyQueue;
+  NSNotificationQueue *_notifyQueue;
 }
+
+#pragma mark - Initialize
 
 - (instancetype)init {
   self = [super init];
   if (self) {
-    timer = [NSTimer timerWithTimeInterval:3.f
-                                    target:self
-                                  selector:@selector(timerTick)
-                                  userInfo:nil
-                                   repeats:YES];
-
-    // 注意：
-    // 使用 timerWithTimeInterval method 時必須手動將 timer 加入 runloop 當中
-    // 否則 timer 是不會被啟動的
-    // (這點和 scheduledTimerWithTimeInterval method 不同)
-    // 加入 runloop 後 timer 就會自動 fire
-    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
-
-    notifyQueue = [[NSNotificationQueue alloc]
-                   initWithNotificationCenter:[NSNotificationCenter defaultCenter]];
+    // 初始化 notification queue
+    _notifyQueue = [[NSNotificationQueue alloc]
+                    initWithNotificationCenter:[NSNotificationCenter defaultCenter]];
   }
   return self;
 }
 
-- (void)timerTick {
+#pragma mark - Methods
+
+- (void)triggerNotify {
   NSNotification *noti = [NSNotification notificationWithName:kMyNotificationName
                                                        object:nil
                                                      userInfo:nil];
 
   NSLog(@"通知即將發送");
 
-  [notifyQueue enqueueNotification:noti
-                      postingStyle:NSPostASAP
-                      coalesceMask:NSNotificationCoalescingOnName | NSNotificationCoalescingOnSender
-                          forModes:nil];
+  // 將通知加入 queue 後即可達成 async 效果，系統會找機會發送
+  // 依 postingStyle 決定何時進行發送
+  // 並依 coalesceMask 設定將多個通知合而為一
+  // 若有設定 forModes，則會在特定的 runloop mode 時才進行發送
+  [_notifyQueue enqueueNotification:noti
+                       postingStyle:NSPostASAP
+                       coalesceMask:NSNotificationCoalescingOnName |
+                                    NSNotificationCoalescingOnSender
+                           forModes:nil];
 
   NSLog(@"通知發送完成");
 }

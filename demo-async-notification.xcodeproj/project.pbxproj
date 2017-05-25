@@ -13,8 +13,7 @@
 		EFFC74511ED5B113004814DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFC744F1ED5B113004814DB /* LaunchScreen.storyboard */; };
 		EFFC745A1ED5B13C004814DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC74591ED5B13C004814DB /* MainViewController.m */; };
 		EFFC745D1ED5B297004814DB /* NotifyPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC745C1ED5B297004814DB /* NotifyPoster.m */; };
-		EFFC74601ED5B2B2004814DB /* NotifyReceiverA.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC745F1ED5B2B2004814DB /* NotifyReceiverA.m */; };
-		EFFC74631ED5B2BB004814DB /* NotifyReceiverB.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC74621ED5B2BB004814DB /* NotifyReceiverB.m */; };
+		EFFC746B1ED671FA004814DB /* NotifyReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC746A1ED671FA004814DB /* NotifyReceiver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +28,10 @@
 		EFFC74591ED5B13C004814DB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		EFFC745B1ED5B297004814DB /* NotifyPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyPoster.h; sourceTree = "<group>"; };
 		EFFC745C1ED5B297004814DB /* NotifyPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyPoster.m; sourceTree = "<group>"; };
-		EFFC745E1ED5B2B2004814DB /* NotifyReceiverA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyReceiverA.h; sourceTree = "<group>"; };
-		EFFC745F1ED5B2B2004814DB /* NotifyReceiverA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyReceiverA.m; sourceTree = "<group>"; };
-		EFFC74611ED5B2BB004814DB /* NotifyReceiverB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyReceiverB.h; sourceTree = "<group>"; };
-		EFFC74621ED5B2BB004814DB /* NotifyReceiverB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyReceiverB.m; sourceTree = "<group>"; };
 		EFFC74671ED5B528004814DB /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		EFFC74681ED5B5E2004814DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EFFC74691ED671FA004814DB /* NotifyReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyReceiver.h; sourceTree = "<group>"; };
+		EFFC746A1ED671FA004814DB /* NotifyReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyReceiver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +68,10 @@
 				EFFC74451ED5B113004814DB /* AppDelegate.m */,
 				EFFC74581ED5B13C004814DB /* MainViewController.h */,
 				EFFC74591ED5B13C004814DB /* MainViewController.m */,
-				EFFC74651ED5B3EB004814DB /* Notify */,
+				EFFC745B1ED5B297004814DB /* NotifyPoster.h */,
+				EFFC745C1ED5B297004814DB /* NotifyPoster.m */,
+				EFFC74691ED671FA004814DB /* NotifyReceiver.h */,
+				EFFC746A1ED671FA004814DB /* NotifyReceiver.m */,
 				EFFC744D1ED5B113004814DB /* Assets.xcassets */,
 				EFFC744F1ED5B113004814DB /* LaunchScreen.storyboard */,
 				EFFC74521ED5B113004814DB /* Info.plist */,
@@ -88,19 +88,6 @@
 				EFFC74681ED5B5E2004814DB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EFFC74651ED5B3EB004814DB /* Notify */ = {
-			isa = PBXGroup;
-			children = (
-				EFFC745B1ED5B297004814DB /* NotifyPoster.h */,
-				EFFC745C1ED5B297004814DB /* NotifyPoster.m */,
-				EFFC745E1ED5B2B2004814DB /* NotifyReceiverA.h */,
-				EFFC745F1ED5B2B2004814DB /* NotifyReceiverA.m */,
-				EFFC74611ED5B2BB004814DB /* NotifyReceiverB.h */,
-				EFFC74621ED5B2BB004814DB /* NotifyReceiverB.m */,
-			);
-			name = Notify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFFC74631ED5B2BB004814DB /* NotifyReceiverB.m in Sources */,
+				EFFC746B1ED671FA004814DB /* NotifyReceiver.m in Sources */,
 				EFFC74461ED5B113004814DB /* AppDelegate.m in Sources */,
-				EFFC74601ED5B2B2004814DB /* NotifyReceiverA.m in Sources */,
 				EFFC745A1ED5B13C004814DB /* MainViewController.m in Sources */,
 				EFFC74431ED5B113004814DB /* main.m in Sources */,
 				EFFC745D1ED5B297004814DB /* NotifyPoster.m in Sources */,
@@ -331,6 +317,7 @@
 				EFFC74571ED5B113004814DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
