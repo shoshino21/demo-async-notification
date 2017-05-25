@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFFC74431ED5B113004814DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC74421ED5B113004814DB /* main.m */; };
+		EFFC74461ED5B113004814DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC74451ED5B113004814DB /* AppDelegate.m */; };
+		EFFC744E1ED5B113004814DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFC744D1ED5B113004814DB /* Assets.xcassets */; };
+		EFFC74511ED5B113004814DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFC744F1ED5B113004814DB /* LaunchScreen.storyboard */; };
+		EFFC745A1ED5B13C004814DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC74591ED5B13C004814DB /* MainViewController.m */; };
+		EFFC745D1ED5B297004814DB /* NotifyPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC745C1ED5B297004814DB /* NotifyPoster.m */; };
+		EFFC74601ED5B2B2004814DB /* NotifyReceiverA.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC745F1ED5B2B2004814DB /* NotifyReceiverA.m */; };
+		EFFC74631ED5B2BB004814DB /* NotifyReceiverB.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC74621ED5B2BB004814DB /* NotifyReceiverB.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EFFC743E1ED5B113004814DB /* demo-async-notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-async-notification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFC74421ED5B113004814DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFFC74441ED5B113004814DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFFC74451ED5B113004814DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFFC744D1ED5B113004814DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFFC74501ED5B113004814DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFFC74521ED5B113004814DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFC74581ED5B13C004814DB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EFFC74591ED5B13C004814DB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EFFC745B1ED5B297004814DB /* NotifyPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyPoster.h; sourceTree = "<group>"; };
+		EFFC745C1ED5B297004814DB /* NotifyPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyPoster.m; sourceTree = "<group>"; };
+		EFFC745E1ED5B2B2004814DB /* NotifyReceiverA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyReceiverA.h; sourceTree = "<group>"; };
+		EFFC745F1ED5B2B2004814DB /* NotifyReceiverA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyReceiverA.m; sourceTree = "<group>"; };
+		EFFC74611ED5B2BB004814DB /* NotifyReceiverB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyReceiverB.h; sourceTree = "<group>"; };
+		EFFC74621ED5B2BB004814DB /* NotifyReceiverB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyReceiverB.m; sourceTree = "<group>"; };
+		EFFC74671ED5B528004814DB /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		EFFC74681ED5B5E2004814DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFFC743B1ED5B113004814DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFFC74351ED5B113004814DB = {
+			isa = PBXGroup;
+			children = (
+				EFFC74401ED5B113004814DB /* demo-async-notification */,
+				EFFC743F1ED5B113004814DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFFC743F1ED5B113004814DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC743E1ED5B113004814DB /* demo-async-notification.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFFC74401ED5B113004814DB /* demo-async-notification */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC74441ED5B113004814DB /* AppDelegate.h */,
+				EFFC74451ED5B113004814DB /* AppDelegate.m */,
+				EFFC74581ED5B13C004814DB /* MainViewController.h */,
+				EFFC74591ED5B13C004814DB /* MainViewController.m */,
+				EFFC74651ED5B3EB004814DB /* Notify */,
+				EFFC744D1ED5B113004814DB /* Assets.xcassets */,
+				EFFC744F1ED5B113004814DB /* LaunchScreen.storyboard */,
+				EFFC74521ED5B113004814DB /* Info.plist */,
+				EFFC74411ED5B113004814DB /* Supporting Files */,
+			);
+			path = "demo-async-notification";
+			sourceTree = "<group>";
+		};
+		EFFC74411ED5B113004814DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC74421ED5B113004814DB /* main.m */,
+				EFFC74671ED5B528004814DB /* Constant.h */,
+				EFFC74681ED5B5E2004814DB /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFFC74651ED5B3EB004814DB /* Notify */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC745B1ED5B297004814DB /* NotifyPoster.h */,
+				EFFC745C1ED5B297004814DB /* NotifyPoster.m */,
+				EFFC745E1ED5B2B2004814DB /* NotifyReceiverA.h */,
+				EFFC745F1ED5B2B2004814DB /* NotifyReceiverA.m */,
+				EFFC74611ED5B2BB004814DB /* NotifyReceiverB.h */,
+				EFFC74621ED5B2BB004814DB /* NotifyReceiverB.m */,
+			);
+			name = Notify;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFFC743D1ED5B113004814DB /* demo-async-notification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFC74551ED5B113004814DB /* Build configuration list for PBXNativeTarget "demo-async-notification" */;
+			buildPhases = (
+				EFFC743A1ED5B113004814DB /* Sources */,
+				EFFC743B1ED5B113004814DB /* Frameworks */,
+				EFFC743C1ED5B113004814DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "demo-async-notification";
+			productName = "demo-async-notification";
+			productReference = EFFC743E1ED5B113004814DB /* demo-async-notification.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFFC74361ED5B113004814DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = shoshino21;
+				TargetAttributes = {
+					EFFC743D1ED5B113004814DB = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EFFC74391ED5B113004814DB /* Build configuration list for PBXProject "demo-async-notification" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFFC74351ED5B113004814DB;
+			productRefGroup = EFFC743F1ED5B113004814DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFFC743D1ED5B113004814DB /* demo-async-notification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFFC743C1ED5B113004814DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFC74511ED5B113004814DB /* LaunchScreen.storyboard in Resources */,
+				EFFC744E1ED5B113004814DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFFC743A1ED5B113004814DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFC74631ED5B2BB004814DB /* NotifyReceiverB.m in Sources */,
+				EFFC74461ED5B113004814DB /* AppDelegate.m in Sources */,
+				EFFC74601ED5B2B2004814DB /* NotifyReceiverA.m in Sources */,
+				EFFC745A1ED5B13C004814DB /* MainViewController.m in Sources */,
+				EFFC74431ED5B113004814DB /* main.m in Sources */,
+				EFFC745D1ED5B297004814DB /* NotifyPoster.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFFC744F1ED5B113004814DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFC74501ED5B113004814DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFFC74531ED5B113004814DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFFC74541ED5B113004814DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFFC74561ED5B113004814DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/demo-async-notification/PrefixHeader.pch";
+				INFOPLIST_FILE = "demo-async-notification/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shoshino21.demo-async-notification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFFC74571ED5B113004814DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/demo-async-notification/PrefixHeader.pch";
+				INFOPLIST_FILE = "demo-async-notification/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shoshino21.demo-async-notification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFFC74391ED5B113004814DB /* Build configuration list for PBXProject "demo-async-notification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFC74531ED5B113004814DB /* Debug */,
+				EFFC74541ED5B113004814DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFC74551ED5B113004814DB /* Build configuration list for PBXNativeTarget "demo-async-notification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFC74561ED5B113004814DB /* Debug */,
+				EFFC74571ED5B113004814DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFFC74361ED5B113004814DB /* Project object */;
+}
